@@ -26,4 +26,4 @@ ENV PORT ${PORT}
 COPY --from=build /venv /venv
 
 # using shell for only for the PORT variable
-CMD flask run -p ${PORT}
+CMD flask run -h 0.0.0.0 -p ${PORT}
