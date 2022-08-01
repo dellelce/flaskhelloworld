@@ -12,5 +12,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build & Push image
-        run: make build && make push
+      - name: Build image
+        run: make build
+      - name: Push image
+        run: make push
