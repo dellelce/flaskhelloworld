@@ -1,4 +1,4 @@
-IMAGE :=   ghcr.io/dellelce/helloworldpy
+IMAGE :=   ghcr.io/dellelce/pyhelloworld
 
 help:
 	@echo No help
